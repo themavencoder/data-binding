@@ -157,23 +157,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="126dp"
-        android:layout_height="49dp"
-        android:layout_marginLeft="28dp"
-        android:textColor="@{user.checkInput(user.firstName,user.lastName,user.password) ? @color/white : @color/colorPrimary}"
-        android:background="@{user.checkInput(user.firstName,user.lastName,user.password) ? @color/colorPrimary : @color/white}"
-        android:clickable="@{user.checkInput(user.firstName,user.lastName,user.password) ? true : false}"
-        android:onClick="@{handler::buttonLoginClick}"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="18dp"
-
-        android:text="Login"
-
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
 
 
